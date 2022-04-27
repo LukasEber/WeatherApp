@@ -14,7 +14,7 @@ namespace WeatherApp
         private static double _lon;
         private static HttpClient _client = new HttpClient();
         public static string? City { get; set; }
-        public static void NewWeatherData()
+        public static void GetNewWeatherData()
         {
             GetCoordinatesFromApi(City, "6173a3869eca91eae69d58f23a75a2a8");
             ExtractCoordinatesFromJson();
@@ -27,7 +27,6 @@ namespace WeatherApp
             string requestUrl = $"http://api.openweathermap.org/geo/1.0/direct?q={city}&limit=1&appid={key}&units=metric";
             HttpResponseMessage httpResponse = _client.GetAsync(requestUrl).Result;
             _coordinatesResponse = httpResponse.Content.ReadAsStringAsync().Result;
-
         }
 
         static void ExtractCoordinatesFromJson()

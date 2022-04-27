@@ -10,10 +10,9 @@ namespace WeatherApp
         {
             Console.WriteLine("Enter city: ");
             Weather.City = Console.ReadLine();
-
             try
             {
-                Weather.NewWeatherData();
+                Weather.GetNewWeatherData();
             }
             catch (Exception ex)
             {
