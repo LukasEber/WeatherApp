@@ -3,8 +3,8 @@ A C# project which shows the user the weather at their location.
 
 ## Installation
 
-Clone the repository in Visual Studio and run it  
-
+Clone the repository in Visual Studio and run it    
+https://github.com/LukasEber/WeatherApp
 
 ## Usage
 
