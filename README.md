@@ -17,6 +17,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## Project Structure
-The classes WeatherMapResponse, WeatherResult and CoordinatesResponse are to extract the response from the json
+The folder Api Responses contains the classes WeatherMapResponse, WeatherResult and CoordinatesResponse which extract the response from the json
 In the Weather class there are some different methods to get the data
 
