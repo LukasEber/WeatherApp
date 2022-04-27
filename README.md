@@ -8,7 +8,7 @@ Clone the repository in Visual Studio and run it
 
 ## Usage
 
-The project shows the user the weather at their location. It uses 2 Apis: one for getting the coordinates of a city and the other for getting the weather data
+The project shows the user the weather at their location. It uses 2 Apis: one for getting the coordinates of a city and the other for getting the weather data  
 There isn´t a special usecase, it´s just for fun and learning :)
 
 ## Contributing
