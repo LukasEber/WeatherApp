@@ -10,7 +10,7 @@ namespace WeatherApp
         private static double _lat;
         private static double _lon;
         private static string? _city;
-        private static HttpClient client;
+        private static HttpClient _client = new HttpClient();
 
         static void Main(string[] args)
         {
@@ -38,9 +38,8 @@ namespace WeatherApp
 
         static void GetCoordinatesFromApi(string city, string key)
         {
-            client = new HttpClient();
-            string requestUri = $"http://api.openweathermap.org/geo/1.0/direct?q={city}&limit=1&appid={key}&units=metric";
-            HttpResponseMessage httpResponse = client.GetAsync(requestUri).Result;
+            string requestUrl = $"http://api.openweathermap.org/geo/1.0/direct?q={city}&limit=1&appid={key}&units=metric";
+            HttpResponseMessage httpResponse = _client.GetAsync(requestUrl).Result;
             _coordinatesResponse = httpResponse.Content.ReadAsStringAsync().Result;
 
         }
@@ -57,8 +56,8 @@ namespace WeatherApp
 
         static void GetWeatherDataFromApi(double lat, double lon, string key)
         {
-            string requestUri = $"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={key}&units=metric";
-            HttpResponseMessage httpResponse = client.GetAsync(requestUri).Result;
+            string requestUrl = $"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={key}&units=metric";
+            HttpResponseMessage httpResponse = _client.GetAsync(requestUrl).Result;
             _weatherResponse = httpResponse.Content.ReadAsStringAsync().Result;
         }
 
