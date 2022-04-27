@@ -18,5 +18,5 @@ Please make sure to update tests as appropriate.
 
 ## Project Structure
 The classes WeatherMapResponse, WeatherResult and CoordinatesResponse are to extract the response from the json
-In the Program class there are some different methods to get the data
+In the Weather class there are some different methods to get the data
 
