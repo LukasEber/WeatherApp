@@ -6,6 +6,10 @@ A C# project which shows the user the weather at their location.
 Clone the repository in Visual Studio and run it    
 https://github.com/LukasEber/WeatherApp
 
+or
+
+``` git clone https://github.com/LukasEber/WeatherApp ```
+
 ## Usage
 
 The project shows the user the weather at their location. It uses 2 Apis: one for getting the coordinates of a city and the other for getting the weather data  
