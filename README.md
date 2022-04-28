@@ -6,7 +6,7 @@ A C# project which shows the user the weather at their location.
 Clone the repository in Visual Studio and run it    
 https://github.com/LukasEber/WeatherApp
 
-or
+or use:
 
 ``` git clone https://github.com/LukasEber/WeatherApp ```
 
